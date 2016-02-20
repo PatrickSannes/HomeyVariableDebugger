@@ -38,7 +38,7 @@ namespace HomeyDebugger
             DisplayRootViewFor<DebugViewModel>();
 
             OwinWebApiConfig.DependencyResolver = new AutofacWebApiDependencyResolver(Container);
-            WebApp.Start<OwinWebApiConfig>($"http://localhost:{ConfigurationManager.AppSettings["Port"]}/");
+            WebApp.Start<OwinWebApiConfig>(ConfigurationManager.AppSettings["Address"]);
         }
     }
 }

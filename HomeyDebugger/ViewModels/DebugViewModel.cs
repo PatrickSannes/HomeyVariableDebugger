@@ -32,7 +32,7 @@ namespace HomeyDebugger.ViewModels
         {
             this.events = events;
             events.Subscribe(this);
-            port = ConfigurationManager.AppSettings["Port"];
+            port = ConfigurationManager.AppSettings["Address"];
         }
 
         public void Handle(Variable variable)
