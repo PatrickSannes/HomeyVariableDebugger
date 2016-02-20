@@ -1,0 +1,2 @@
+# HomeyVariableDebugger
+Homey variable debugger
